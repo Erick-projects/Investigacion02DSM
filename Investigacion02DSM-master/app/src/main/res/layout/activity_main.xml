@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/text_primary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título del Post"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/background_color" />
+
+    <EditText
+        android:id="@+id/tituloPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Escribe el título"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/background_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuerpo del Post"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/background_color" />
+
+    <EditText
+        android:id="@+id/cuerpoPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Escribe el cuerpo del post"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/background_color" />
+
+    <Button
+        android:id="@+id/btnCrearPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Post"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/button_text_color"
+        android:padding="12dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPost"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="true" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refrescar Posts"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/button_text_color"
+        android:padding="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_marginBottom="32dp" />
+
+</LinearLayout>
